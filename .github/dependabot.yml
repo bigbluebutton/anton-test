@@ -1,18 +1,12 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
+  - package-ecosystem: npm
     directory: "/"
+    target-branch: "2.7.x-release"
     schedule:
       interval: daily
-      time: "14:36"
-      timezone: America/Toronto
-    target-branch: "v2.7.x-release"
-    # Labels on pull requests for security and version updates
-    labels:
-      - "npm 001"
-  - package-ecosystem: "npm"
+  - package-ecosystem: npm
     directory: "/"
     target-branch: "v3.0.x-release"
-    labels:
-      - "npm 004"
-
+    schedule:
+      interval: daily
